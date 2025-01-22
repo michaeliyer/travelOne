@@ -458,6 +458,11 @@ function displayTrip(trip) {
     </div>
   `;
 
+
+
+
+
+
   // Show the trip details section
   document.getElementById("tripDetailsSection").classList.remove("hidden");
 
@@ -586,7 +591,6 @@ function addPhotoToTrip(tripId, photoData) {
     };
   };
 }
-
 
 
 
