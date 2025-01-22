@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Traveler</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header>
+    <h1>Hello World Traveler!</h1>
+    <button id="menuToggle">☰ Menu</button>
+  </header>
+
+  <nav id="menu" class="hidden">
+    <ul>
+      <li><button id="addTripBtn">Add a Trip</button></li>
+      <li><button id="viewTripsBtn">View All Trips</button></li>
+      <!-- <li><button id="exportTripsBtn">Export Trips</button></li>
+      <li><button id="importTripsBtn">Import Trips</button></li> -->
+    </ul>
+    <input type="file" id="importTrips" accept=".json" class="hidden">
+  </nav>
+
+  <main>
+    <section id="addTripSection" class="hidden">
+      <h2>Add a Trip</h2>
+      <form id="tripInputForm">
+        <label for="tripId">Trip ID:</label>
+        <input type="number" id="tripId" placeholder="Enter Trip ID" required>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" placeholder="Enter Location" required>
+
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate" required>
+
+        <label for="endDate">End Date:</label>
+        <input type="date" id="endDate" required>
+
+        <label for="notes">Notes:</label>
+        <textarea id="notes" placeholder="Enter Notes"></textarea>
+
+        <label for="photoUpload">Upload Photos:</label>
+        <input type="file" id="photoUpload" accept="image/*" multiple>
+
+        <button type="submit">Save Trip</button>
+      </form>
+    </section>
+
+    <section id="viewTripsSection" class="hidden">
+      <h2>All Trips</h2>
+      <!-- <li><button id="hideAllTripsBtn">Hide All Trips</button></li> -->
+      <ul id="tripList">
+        <!-- <p>No trips available. Add a new trip to see it listed here.</p> -->
+      </ul>
+    </section>
+
+    <section id="tripDetailsSection" class="hidden">
+      <h2>Trip Details</h2>
+      <div id="tripDetails"></div>
+    </section>
+  </main>
+
+  <script src="assets/script.js"></script>
+</body>
+<footer>
+  <p>World Traveler © 2025</p>
+</footer>
+</html>

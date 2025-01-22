@@ -1,0 +1,19 @@
+# macOS System Files
+.DS_Store
+
+# Node.js dependencies (if you ever add Node.js)
+node_modules/
+
+# Build or temporary files
+dist/
+*.log
+
+# VS Code settings
+.vscode/
+
+# Live server temporary files
+*.local
+*.lock
+
+# Optional: Ignore a dev folder if you separate dev tools
+dev/
