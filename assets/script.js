@@ -487,7 +487,7 @@ function displayTrip(trip) {
 
 // Add Daily Note Prompt
 function addNotePrompt(tripId) {
-  const date = prompt("Enter date (YYYY-MM-DD):");
+  const date = prompt("Enter date:");
   const note = prompt("Enter note:");
   if (date && note) {
     addNoteToTrip(tripId, date, note);
